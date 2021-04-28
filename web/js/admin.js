@@ -615,7 +615,7 @@ function alter_department() {
     var dno = all[0].value.toString();
     var after_dno = all[1].value.toString();
     var after_dname = all[2].value.toString();
-    var url = "/StudentManagement/AdminDao?action=alter_department&dno=" + dno + "&after_dno=" + after_dno + "&after_dname" + after_dname;
+    var url = "/StudentManagement/AdminDao?action=alter_department&dno=" + dno + "&after_dno=" + after_dno + "&after_dname=" + after_dname;
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
